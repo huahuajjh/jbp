@@ -1,2 +1,0 @@
-# jbp
-java web boilerplate

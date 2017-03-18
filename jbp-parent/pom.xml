@@ -15,11 +15,11 @@
 
   <!--modules of project-->
   <modules>
-    <module>jbp-application</module>
-    <module>jbp-core</module>
-    <module>jbp-infrastructure</module>
-    <module>jbp-web</module>
-    <module>jbp-webapi</module>
+    <module>../jbp-application</module>
+    <module>../jbp-core</module>
+    <module>../jbp-infrastructure</module>
+    <module>../jbp-web</module>
+    <module>../jbp-webapi</module>
   </modules>
 
   <!--customize properties info-->

@@ -3,14 +3,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!--parent project-->
-	<parent>
-		<groupId>com.tqmars</groupId>
-		<artifactId>jbp-parent</artifactId>
+    <parent>
+        <groupId>com.tqmars</groupId>
+        <artifactId>jbp-parent</artifactId>
         <version>1.0.0</version>
-	</parent>
+    </parent>
 
-  <artifactId>jbp-infrastructure</artifactId>
+  <artifactId>jbp-jdbc</artifactId>
   <packaging>jar</packaging>
   <name>${project.artifactId}</name>
-  <description>The infrastructure module of jbp project</description>
+  <description>The jdbc module of jbp project,presentation layer</description>
 </project>

@@ -1,22 +1,23 @@
 package com.tqmars.domain.uow;
 
-import com.tqmars.events.EventArgs;
+import com.tqmars.event.EventArgs;
+import com.tqmars.exception.JbpException;
 
 /**
  * Created by jjh on 17-3-23.
  */
 public class UnitOfWorkFailedEventArgs extends EventArgs{
-    private Exception _exception;
+    private JbpException _exception;
 
-    public Exception getException() {
+    public JbpException getException() {
         return _exception;
     }
 
-    private void setException(Exception _exception) {
+    private void setException(JbpException _exception) {
         this._exception = _exception;
     }
 
-    public UnitOfWorkFailedEventArgs(Exception _exception) {
+    public UnitOfWorkFailedEventArgs(JbpException _exception) {
         this._exception = _exception;
     }
 }

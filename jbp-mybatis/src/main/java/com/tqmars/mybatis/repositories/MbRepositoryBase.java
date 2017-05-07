@@ -1,8 +1,10 @@
 package com.tqmars.mybatis.repositories;
 
 import com.tqmars.domain.entities.IEntityOfTPrimaryKey;
+import com.tqmars.domain.entities.annotations.Table;
 import com.tqmars.domain.repositories.JbpRepositoryBase;
 import com.tqmars.mybatis.ISessionProvider;
+import com.tqmars.mybatis.utils.SqlUtil;
 import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
@@ -13,13 +15,19 @@ import java.util.Map;
  */
 public class MbRepositoryBase<TEntity extends IEntityOfTPrimaryKey<TPrimaryKey>,TPrimaryKey> extends JbpRepositoryBase<TEntity,TPrimaryKey>
 {
-    public SqlSession session;
+    private Class<TEntity> entityClass;
+
+    private SqlSession session;
 
     private ISessionProvider sessionProvider;
 
     public MbRepositoryBase(ISessionProvider _sessionProvider){
         sessionProvider = _sessionProvider;
         session = sessionProvider.getSession();
+    }
+
+    private String getTableName(){
+        return entityClass.getAnnotation(Table.class).name();
     }
 
     @Override
@@ -79,7 +87,6 @@ public class MbRepositoryBase<TEntity extends IEntityOfTPrimaryKey<TPrimaryKey>,
 
     @Override
     public void update(TEntity entity) {
-
     }
 
     @Override

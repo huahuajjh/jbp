@@ -39,6 +39,9 @@
         <!--test project-->
         <module>jbp-test</module>
 
+        <!--event module-->
+        <module>jbp-event</module>
+
     </modules>
 
     <!--customize properties info-->

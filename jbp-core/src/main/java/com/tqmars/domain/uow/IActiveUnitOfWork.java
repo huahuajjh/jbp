@@ -1,7 +1,7 @@
 package com.tqmars.domain.uow;
 
-import com.tqmars.events.EventArgs;
-import com.tqmars.events.EventHandler;
+import com.tqmars.event.EventArgs;
+import com.tqmars.event.EventHandler;
 
 import java.util.List;
 

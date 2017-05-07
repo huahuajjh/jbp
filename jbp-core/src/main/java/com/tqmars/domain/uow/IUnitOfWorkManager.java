@@ -6,6 +6,7 @@ import com.tqmars.domain.uow.consts.TransactionScopeOption;
  * Created by jjh on 17-3-23.
  * Unit of work manager.
  * Used to begin and control a unit of work.
+ * Facade pattern.
  */
 public interface IUnitOfWorkManager {
     /**

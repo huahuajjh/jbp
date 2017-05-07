@@ -29,13 +29,11 @@ public class DataFilterConfiguration {
         this.filterParameters = new HashMap<>();
     }
 
-    DataFilterConfiguration(DataFilterConfiguration filter2Clone,boolean isEnabled){
+    public DataFilterConfiguration(DataFilterConfiguration filter2Clone,boolean isEnabled){
         this(filter2Clone.filterName,isEnabled);
 
         filter2Clone.filterParameters.entrySet().forEach(
-                entry -> {
-                    this.filterParameters.put(entry.getKey(),entry.getValue());
-                }
+                entry -> this.filterParameters.put(entry.getKey(),entry.getValue())
             );
     }
 }

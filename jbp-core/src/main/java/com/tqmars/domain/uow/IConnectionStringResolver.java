@@ -10,5 +10,5 @@ public interface IConnectionStringResolver {
      * @param args Arguments that can be used while resolving connection string.
      * @return
      */
-    public String getNameOrConnectionString(connectionStringResolverArgs args);
+    public String getNameOrConnectionString(ConnectionStringResolveArgs args);
 }

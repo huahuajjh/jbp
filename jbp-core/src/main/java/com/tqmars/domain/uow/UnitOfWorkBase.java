@@ -15,7 +15,8 @@ public abstract class UnitOfWorkBase implements IUnitOfWork{
 
     protected UnitOfWorkBase(IConnectionStringResolver connectionStringResolver,
                              IUnitOfWorkDefaultOptions defaultOptions,
-                             IUnitOfWorkFilterHandler unitOfWorkFilterHandler){
+                             IUnitOfWorkFilterHandler unitOfWorkFilterHandler)
+    {
 
         _filterHandler = unitOfWorkFilterHandler;
         _defaultOptions = defaultOptions;

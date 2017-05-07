@@ -84,7 +84,8 @@ public abstract class JbpModule {
         List<Class> depsModules = findDependedModuleTypes(module);
         depsModules.forEach(m -> {
             addModuleAndDependenciesRecursively(modules,m);
-        });
+            }
+        );
     }
 
 }

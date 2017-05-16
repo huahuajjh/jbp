@@ -11,15 +11,15 @@ import java.util.Map;
 public interface IRepository<TEntity extends IEntityOfTPrimaryKey<TPrimaryKey>,TPrimaryKey> {
     //query
     TEntity get(TPrimaryKey id);
-    TEntity get(TPrimaryKey id,String... properties);
+    TEntity get(TPrimaryKey id,String properties);
     TEntity getOne(String where);
-    TEntity getOne(String where,String... properties);
+    TEntity getOne(String where,String properties);
     List<TEntity> getAll();
-    List<TEntity> getAll(String... properties);
+    List<TEntity> getAll(String properties);
     List<TEntity> getAllWithCondition(String where);
-    List<TEntity> getAllWithCondition(String... properties);
+    List<TEntity> getAllWithCondition(String where,String properties);
     List<TEntity> getAllWithConditionByPage(String where,int pageIndex,int pageSize);
-    List<TEntity> getAllWithConditionByPage(String where,int pageIndex,int pageSize,String... properties);
+    List<TEntity> getAllWithConditionByPage(String where,int pageIndex,int pageSize,String properties);
 
     //update
     TEntity updateAndGetEntity(TEntity entity);
@@ -41,4 +41,7 @@ public interface IRepository<TEntity extends IEntityOfTPrimaryKey<TPrimaryKey>,T
     int count();
     int count(String where);
     boolean exists(String where);
+
+    void setEntityClass(Class<TEntity> entityClass);
+    Class<TEntity> getEntityClass();
 }

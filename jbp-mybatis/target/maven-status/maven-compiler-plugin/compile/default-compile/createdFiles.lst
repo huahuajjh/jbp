@@ -1,0 +1,7 @@
+com/tqmars/mybatis/uow/UnitOfWorkSessionProvider.class
+com/tqmars/mybatis/utils/JbpHashMap.class
+com/tqmars/mybatis/utils/SqlUtil.class
+com/tqmars/mybatis/utils/JbpArrayList.class
+com/tqmars/mybatis/repositories/MbRepositoryBase.class
+com/tqmars/mybatis/uow/MbUnitOfWork.class
+com/tqmars/mybatis/ISessionProvider.class

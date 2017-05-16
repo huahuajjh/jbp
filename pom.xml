@@ -73,6 +73,7 @@
         <mybatis.version>3.4.1</mybatis.version>
         <!--google json version-->
         <google.gson.version>2.3.1</google.gson.version>
+        <log4j.version>1.2.17</log4j.version>
     </properties>
 
     <!--dependency management,dependent in this node will not be used if sub modules do not declare it in its own pom.xml file,
@@ -91,6 +92,12 @@
                 <groupId>org.springframework</groupId>
                 <artifactId>spring-context</artifactId>
                 <version>${spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>log4j</groupId>
+                <artifactId>log4j</artifactId>
+                <version>${log4j.version}</version>
             </dependency>
 
             <!--spring core-->

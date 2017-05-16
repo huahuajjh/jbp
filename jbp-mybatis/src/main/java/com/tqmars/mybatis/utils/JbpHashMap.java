@@ -1,6 +1,7 @@
 package com.tqmars.mybatis.utils;
 
 import com.tqmars.domain.entities.IEntity;
+import com.tqmars.domain.entities.IEntityOfTPrimaryKey;
 import com.tqmars.domain.entities.annotations.Column;
 
 import java.lang.reflect.Field;
@@ -11,7 +12,7 @@ import java.util.Map;
  * Created by jjh on 5/6/17.
  */
 public class JbpHashMap extends HashMap<String,Object> {
-    public <TEntity extends IEntity> TEntity toEntity(Class<TEntity> entityClass){
+    public <TEntity extends IEntityOfTPrimaryKey> TEntity toEntity(Class<TEntity> entityClass){
         TEntity entity = instance(entityClass);
 
         if(entrySet().isEmpty()){
@@ -39,6 +40,8 @@ public class JbpHashMap extends HashMap<String,Object> {
                 }
             }
         }
+
+        entity.setId(super.get("id"));
 
         return entity;
     }

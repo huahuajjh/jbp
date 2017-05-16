@@ -1,0 +1,7 @@
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/repositories/MbRepositoryBase.java
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/utils/SqlUtil.java
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/uow/UnitOfWorkSessionProvider.java
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/uow/MbUnitOfWork.java
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/ISessionProvider.java
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/utils/JbpHashMap.java
+/home/jjh/pros/jbp/jbp-mybatis/src/main/java/com/tqmars/mybatis/utils/JbpArrayList.java
